@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HydraFit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>HydraFit</h1>
+        <p>Track your day and stay on top of your goals.</p>
+
+        <button id="themeButton">Light Mode</button>
+
+        <div class="cards">
+
+            <div class="card">
+                <h2>Water</h2>
+
+                <p>Goal: 2500 ml</p>
+
+                <div class="progress">
+                    <div id="waterBar"></div>
+                </div>
+
+                <p id="waterText">0 / 2500 ml</p>
+
+                <p id="waterMessage"></p>
+
+                <button id="cup">250ml</button>
+                <button id="bottle">500ml</button>
+                <button id="waterReset">Reset</button>
+            </div>
+
+
+            <div class="card">
+                <h2>Habits</h2>
+
+                <input type="text" id="habitInput" placeholder="Add a habit">
+                <button id="addHabit">Add Habit</button>
+
+                <p id="habitMessage"></p>
+
+                <div id="habitList"></div>
+            </div>
+
+
+            <div class="card">
+                <h2>Calories</h2>
+
+                <select id="activity">
+                    <option value="11">Running</option>
+                    <option value="8">Cycling</option>
+                    <option value="4">Yoga</option>
+                </select>
+
+                <input type="number" id="duration" placeholder="Minutes">
+
+                <button id="calculate">Calculate & Add</button>
+
+                <p>Today's Calories</p>
+
+                <h3 id="calories">0 kcal</h3>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html> 
